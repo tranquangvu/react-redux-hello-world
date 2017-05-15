@@ -1,9 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
-import './stylesheets/index.scss';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import configureStore from './store/configureStore'
+import Root from './containers/Root'
+
+const store = configureStore()
 
 ReactDOM.render(
-  <App />,
+  <Root store={store}/>,
   document.getElementById('root')
 );
