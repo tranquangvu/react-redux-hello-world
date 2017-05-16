@@ -1,0 +1,45 @@
+@import 'mixin';
+
+$white: #FFF;
+$teal: #1BA9B0;
+
+.login-container {
+  background: $white;
+
+  .header {
+    height: 45vh;
+    background: $teal;
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+  }
+
+  .title {
+    color: $white;
+    font-size: 38px;
+    margin-top: -50px;
+  }
+
+  .login-form {
+    max-width: 380px;
+    background: $white;
+    margin: -100px auto 50px auto;
+    padding: 25px 50px 15px;
+    border-radius: 6px;
+    @include box-shadow(rgb(197, 197, 197) 0px 1px 3px);
+
+    .form-title {
+      text-align: center;
+      margin: 10px 0 15px;
+    }
+
+    .ant-form-item {
+      margin-bottom: 10px;
+    }
+
+    .form-submit-btn {
+      display: block;
+      width: 100%;
+    }
+  }
+}

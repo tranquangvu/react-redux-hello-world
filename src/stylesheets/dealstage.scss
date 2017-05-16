@@ -1,0 +1,30 @@
+@import 'mixin';
+
+$white: #FFF;
+$teal: #1BA9B0;
+
+.dealstage-container {
+  height: 100vh;
+  position: relative;
+  background: $teal;
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(column);
+
+  .dealstage-title {
+    font-size: 48px;
+    color: $white;
+    font-weight: 300;
+  }
+
+  a {
+    color: $white !important;
+    font-size: 28px;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
